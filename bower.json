@@ -1,0 +1,22 @@
+{
+  "name": "проэкт",
+  "authors": [
+    "Misha Nikula <cj27111992@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "latest",
+    "normalize-css": "normalize.css#~3.0.3"
+  }
+}
