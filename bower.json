@@ -1,0 +1,7 @@
+{
+  "name": "mine",
+  "dependencies": {
+    "jquery": "1.11.1",
+    "normalize-css": "normalize.css#~3.0.3"
+  }
+}
