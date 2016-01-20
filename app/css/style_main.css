@@ -1,0 +1,113 @@
+.main{
+	width:1020px;
+	min-height:841px;
+	margin: 0px auto;
+}
+
+.section{
+	margin: 0px 0px 0 0px;
+	width:650px;
+	min-height: 840px;
+	float: right;
+}
+
+.clearfix:before, .clearfix:after{
+	content:"";
+	display:table;
+}
+.clearfix{
+	clear:both;
+}
+
+.information{
+	min-height: 320px;
+	background-color: #eff3f7;
+	margin:40px 0 0 0;
+}
+
+.text_information{
+	border-bottom:2px solid #3ba8c0;
+	width:340px;
+	padding:18px 0 15px 20px;
+	font-size: 27px;
+	color:#3ba8c0;
+}
+
+.circle{
+	width: 145px;
+	height:145px;
+	margin: 35px 0 0 50px;
+	float:left;
+	border: 3px solid #3ba8c0;
+	border-radius: 100px;
+	overflow: hidden;
+	position: relative;
+}
+
+.photo{
+	width:100%;
+	display: block;
+	padding:0px 0px 20px 0px;
+	
+}
+
+.information_content{
+	width:380px;
+	height:200px;
+	float:right;
+}
+
+.info.first{
+	margin:22px 0px 0 -45px;
+}
+.info{
+	margin-left:-45px;
+}
+
+.skils{
+	display: block;
+	float:right;
+	margin: 0 20px 0 0px;
+	width:230px;
+	min-height:75px;
+}
+
+.web{
+	min-width:50px;
+	min-height: 20px;
+	padding:0px;
+	margin:0 0px 7px 2px ;
+	background-color: green;
+	display: inline-block;
+	background-image: -moz-linear-gradient( 90deg, rgb(46,140,162) 0%, rgb(46,140,162) 52%, rgb(59,168,192) 53%, rgb(59,168,192) 100%);
+background-image: -webkit-linear-gradient( 90deg, rgb(46,140,162) 0%, rgb(46,140,162) 52%, rgb(59,168,192) 53%, rgb(59,168,192) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(46,140,162) 0%, rgb(46,140,162) 52%, rgb(59,168,192) 53%, rgb(59,168,192) 100%);
+	color:#fff;
+	text-align: center;
+	font-size: 14px;
+	border-radius: 3px;
+}
+.web.js{
+	min-width:80px;
+}
+
+.experience{
+	min-height: 230px;
+	background-color: #eff3f7;
+	margin:25px 0 0 0;
+}
+
+
+
+.Прямоугольник__скругл__углы_1_копия {
+  border-radius: 2px;
+  background-image: -moz-linear-gradient( 90deg, rgb(46,140,162) 0%, rgb(46,140,162) 52%, rgb(59,168,192) 53%, rgb(59,168,192) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(46,140,162) 0%, rgb(46,140,162) 52%, rgb(59,168,192) 53%, rgb(59,168,192) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(46,140,162) 0%, rgb(46,140,162) 52%, rgb(59,168,192) 53%, rgb(59,168,192) 100%);
+  position: absolute;
+  left: 932px;
+  top: 386px;
+  width: 52px;
+  height: 19px;
+  z-index: 72;
+}

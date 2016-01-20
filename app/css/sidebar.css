@@ -1,0 +1,153 @@
+.nav{
+	float:left;
+	margin-top: 25px;
+}
+
+.menu{
+	width:250px;
+	margin-left:15px;
+
+}
+
+.sidebar_li{
+	min-height:42px;
+	background-color: #eff3f7;
+	color:#47adc4;
+	font-size: 23px;
+}
+.sidebar_li.first:active, .sidebar_li.second:active{
+	background-color: #3ba8c0;
+	color:#FFFFFF;
+}
+.sidebar_li.first{
+	border-radius: 5px 5px 0px 0px;
+	background-color: #3ba8c0;
+	color:#FFFFFF;
+	min-height: 50px;
+}
+
+.sidebar_li.third{
+	color:#9ba0ad;
+}
+
+.border_bottom{
+	
+	padding:22px 0 0 13px;
+	width:220px;
+	padding-bottom: 21px;
+	margin-left: 10px;
+}
+
+.border_bottom.second{
+	border-bottom: 2px solid #3ba8c0;
+	padding:22px 0 0 13px;
+	width:215px;
+	padding-bottom: 21px;
+	margin-left: 10px;
+}
+
+.sidebar{
+	min-height:220px;
+}
+
+.links_menu{
+	text-decoration: none;
+
+}
+
+.navigator{
+	list-style: none;
+	display:block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.aside{
+	width:250px;
+	min-height: 169px;
+	margin-top:20px;
+}
+
+.contacts{
+	min-height: 20px;
+	background-color: #3ba8c0;
+	font-size: 21px;
+	color: #fbfcfd;
+	font-family: firaSans;
+	padding: 9px 0 5px 18px;
+	border-radius: 5px 5px 0px 0px;
+}
+.contacts1{
+	min-height: 35px;
+	background-color: #41b9d4;
+	color:#ededed;
+	padding: 0px 0px 5px 10px;
+
+}
+.contacts2{
+	min-height: 40px;
+	background-color: #48cbe8;
+	color:#ededed;
+}
+.contacts3{
+	min-height: 40px;
+	background-color: #51daf8;
+	color:#ededed;
+	border-radius: 0px 0px 5px 5px;
+}
+
+.contacts_img1{
+	margin:0px;
+	padding-top:10px;
+	margin-left: 30px;
+	width: 22px;
+	height:20px;
+	display: inline-block;
+	background-image: url(../img/spritesheet.png);
+	background-position: 49.9%  -25%;
+}
+.contacts_img2{
+	margin:5px 0 0 ;
+	margin-left: 30px;
+	width: 30px;
+	height:25px;
+	display: inline-block;
+	background-image: url(../img/spritesheet.png);
+
+	background-position: 45%  8%;
+}
+.contacts_img3{
+	margin:5px;
+	margin-left: 34px;
+	width: 30px;
+	height:30px;
+	display: inline-block;
+	background-image: url(../img/spritesheet.png);
+
+	background-position: 54% 0%;
+}
+
+.contacts_txt1{
+	display: block;
+	padding: 1px 0 0 35px;
+}
+.contacts_txt2{
+	display: block;
+	margin: 5px 0 0 40px;
+	text-decoration: underline;
+}
+.contacts_txt3{
+	display: block;
+	margin: 5px 0 0 40px;
+}
