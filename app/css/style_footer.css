@@ -1,0 +1,33 @@
+.footer{
+	background-color: #eff3f7;
+	min-width:1200px;
+	height:77px;
+	margin-top: 0px;
+	position: relative;
+}
+.footer:before{
+	content:"";
+	position: absolute;
+	top:0px;
+	background-image: -moz-linear-gradient( 0deg, rgb(28,102,122) 0%, rgb(246,250,254) 0%, rgb(216,216,216) 0%, rgb(242,246,250) 0%, rgb(135,174,186) 28%, rgb(28,102,122) 48%, rgb(135,174,186) 71%, rgb(242,246,250) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgb(28,102,122) 0%, rgb(246,250,254) 0%, rgb(216,216,216) 0%, rgb(242,246,250) 0%, rgb(135,174,186) 28%, rgb(28,102,122) 48%, rgb(135,174,186) 71%, rgb(242,246,250) 100%);
+  background-image: -ms-linear-gradient( 10deg, rgb(28,102,122) 0%, rgb(246,250,254) 0%, rgb(216,216,216) 0%, rgb(242,246,250) 0%, rgb(135,174,186) 28%, rgb(28,102,122) 48%, rgb(135,174,186) 71%, rgb(242,246,250) 100%);
+  width: 1200px;
+  height: 3px;
+}
+
+.enter{
+	float:left;
+	width:40px;
+	height:40px;
+	background: url(../img/spritesheet.png) 41.3% 0%;
+	margin:20px 0 0 240px;
+}
+.enter:hover{
+	background: url(../img/spritesheet.png) 4.4% 0%;
+}
+.copyright{
+	float: left;
+	font-size: 13px;
+	margin:33px 0 0 228px;
+}

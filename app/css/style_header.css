@@ -29,6 +29,7 @@ body, html{
 .social_network{
 	float:right;
 }
+
 .link{
 	margin-right: 15px;
 	margin-top: -5px;
@@ -59,7 +60,7 @@ display:inline-block;
 	background-image: url(../img/spritesheet.png) ;
 	width:50px;
 	height: 50px;
-	background-position: 18.3%;
+	background-position: 18.2%;
 }
 
 .tw{
@@ -91,7 +92,10 @@ display:inline-block;
 	background-position: 35%;
 }
 
-.line_gradient{
+.header:after{
+	content:"";
+	position: absolute;
+	top:105px;
   background-image: -moz-linear-gradient( 0deg, rgb(28,102,122) 0%, rgb(246,250,254) 0%, rgb(216,216,216) 0%, rgb(242,246,250) 0%, rgb(135,174,186) 28%, rgb(28,102,122) 48%, rgb(135,174,186) 71%, rgb(242,246,250) 100%);
   background-image: -webkit-linear-gradient( 0deg, rgb(28,102,122) 0%, rgb(246,250,254) 0%, rgb(216,216,216) 0%, rgb(242,246,250) 0%, rgb(135,174,186) 28%, rgb(28,102,122) 48%, rgb(135,174,186) 71%, rgb(242,246,250) 100%);
   background-image: -ms-linear-gradient( 10deg, rgb(28,102,122) 0%, rgb(246,250,254) 0%, rgb(216,216,216) 0%, rgb(242,246,250) 0%, rgb(135,174,186) 28%, rgb(28,102,122) 48%, rgb(135,174,186) 71%, rgb(242,246,250) 100%);
@@ -106,10 +110,4 @@ display:inline-block;
 	height: 80px;
 }
 
-.footer{
-	background-color: #eff3f7;
-	min-width:1200px;
-	height:77px;
-	margin-top: -80px;
-	position: relative;
-}
+

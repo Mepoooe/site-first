@@ -1,0 +1,46 @@
+.section_my_works{
+	min-height: 841px;
+	background-color: #eff3f7;
+	margin:40px 0 0 0;
+}
+
+.my_works{
+	width:185px;
+	min-height:205px;
+	display: inline-block;
+	margin:28px 0px 0 22px;
+	position: relative;
+}
+
+.my_works_addres{
+	padding:0;
+	text-align: center;
+	color:#3ba8c0;
+}
+.works_info{
+	color: #3ba8c0;
+}
+.name_works{
+	position:absolute;
+	top:25%;
+	right:29%;
+	color: #ffffff;
+	display: ;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	padding:3px;
+	display: none;
+}
+
+.backgraund_works{
+	border: 1px solid #3ba8c0;
+	border-radius: 5px;
+	overflow: hidden;
+	background: #3ba8c0;
+	height:128px;
+}
+.picture_works:hover{
+opacity: 0.5;
+}
+.name_works{
+}

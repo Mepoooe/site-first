@@ -5,7 +5,7 @@
 
 .menu{
 	width:250px;
-	margin-left:15px;
+	margin-left:18px;
 
 }
 
@@ -15,7 +15,7 @@
 	color:#47adc4;
 	font-size: 23px;
 }
-.sidebar_li.first:active, .sidebar_li.second:active{
+.sidebar_li.first, .sidebar_li.second:hover:active{
 	background-color: #3ba8c0;
 	color:#FFFFFF;
 }

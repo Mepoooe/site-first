@@ -5,7 +5,7 @@
 }
 
 .section{
-	margin: 0px 0px 0 0px;
+	margin: 2px 2px 0 0px;
 	width:650px;
 	min-height: 840px;
 	float: right;
@@ -97,17 +97,63 @@ background-image: -webkit-linear-gradient( 90deg, rgb(46,140,162) 0%, rgb(46,140
 	margin:25px 0 0 0;
 }
 
+.text_information_experience{
+	border-bottom:2px solid #3ba8c0;
+	width:185px;
+	padding:21px 0 15px 20px;
+	font-size: 27px;
+	color:#3ba8c0;
+}
 
+.experience_content_block{
+	list-style: none;
+	margin:25px 0 0 85px;
+}
+.experience_part{
+	padding: 0 0 25px 0px;
+	position: relative;
+}
+.experience_part:before{
+	content:"";
+	position:absolute;
+	left:-70px;
+	top: 0px;
+	width:36px;
+	height:35px;
+	background: url(../img/spritesheet.png) 99.3% 20% no-repeat;
+}
 
-.Прямоугольник__скругл__углы_1_копия {
-  border-radius: 2px;
-  background-image: -moz-linear-gradient( 90deg, rgb(46,140,162) 0%, rgb(46,140,162) 52%, rgb(59,168,192) 53%, rgb(59,168,192) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(46,140,162) 0%, rgb(46,140,162) 52%, rgb(59,168,192) 53%, rgb(59,168,192) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(46,140,162) 0%, rgb(46,140,162) 52%, rgb(59,168,192) 53%, rgb(59,168,192) 100%);
-  position: absolute;
-  left: 932px;
-  top: 386px;
-  width: 52px;
-  height: 19px;
-  z-index: 72;
+.study{
+	min-height: 230px;
+	background-color: #eff3f7;
+	margin:25px 0 0 0;
+}
+.text_information_study{
+	border-bottom:2px solid #3ba8c0;
+	width:190px;
+	padding:21px 0 20px 20px;
+	font-size: 27px;
+	color:#3ba8c0;
+}
+.study_img{
+	padding: 0 0 25px 0px;
+	position: relative;
+}
+.study_img.first:before{
+	content:"";
+	position:absolute;
+	left:-70px;
+	top: 0px;
+	width:41px;
+	height:35px;
+	background: url(../img/spritesheet.png) 60% 20% no-repeat;
+}
+.study_img.second:before{
+	content:"";
+	position:absolute;
+	left:-70px;
+	top: 0px;
+	width:36px;
+	height:35px;
+	background: url(../img/spritesheet.png) 0% 20% no-repeat;
 }
