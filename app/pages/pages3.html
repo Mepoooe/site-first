@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="../css/style_main.css">
 	<link rel="stylesheet" href="../css/style_footer.css">
 	<link rel="stylesheet" href="../css/style_main_page_2.css">
+	<link rel="stylesheet" href="../css/style_main_page_3.css">
 	<script src="../bower_components/modernizr/modernizr.js"></script>
 	<title>Сайт резюме</title>
 </head>
@@ -93,78 +94,46 @@
 	</nav>
 
 	<section class="section">
-		<section class="section_my_works clearfix">
-			<div class="text_information_experience">
-				Мои работы
-			</div>
-
-			<div class="all_warks">
-				<div class="my_works">
-					<a href="#" target="_blank" class="work_image_link">
-						<div class="my_works_addres">
-							<img src="../img/picture_works/wokrs1.png" height="127" width="181" alt="works1" class="picture_works">
-								<div class="div_name_works">
-									<div class="name_works">Название</div>
-								</div>
-						</div>
-					</a>
-							<a href="#" target="_blank" class="site_name_link"><i>www.site.ru</i></a>
-							<div class="works_info">Информация о проекте 1 превью 2 строки....</div>
-				</div>
-
-
-				<div class="my_works">
-						<div class="my_works_addres">
-							<a href="#" target="_blank" class="work_image_link">
-								<img src="../img/picture_works/works2.png" height="130" width="181" alt="works2" class="picture_works">
-								<div class="div_name_works">
-									<div class="name_works">Название</div>
-								</div>
-							</a>
-						</div>
-							<a href="#" target="_blank" class="site_name_link"><i>www.site.ru</i></a>
-							<div class="works_info">Информация о проекте 2 превью 2 строки....</div>
-				</div>
-
-				<div class="my_works">
-						<div class="my_works_addres">
-							<a href="#" target="_blank" class="work_image_link">
-											
-								<img src="../img/picture_works/works3.png" height="127" width="181" alt="works3" class="picture_works">
-								<div class="div_name_works">
-									<div class="name_works">Название</div>
-								</div>
-							</a>
-						</div>
-							<a href="#" target="_blank" class="site_name_link"><i>www.site.ru</i>
-							</a>
-							<div class="works_info">Информация о проекте 3 превью 2 строки....</div>
-						
-				</div>
-				<div class="my_works">
-					<a href="#" target="_blank" class="work_image_link">
-						<div class="my_works_addres">
-							<img src="../img/picture_works/works4.png" height="127" width="181" alt="works4" class="picture_works">
-							<div class="div_name_works">
-									<div class="name_works">Название</div>
-							</div>
-						</div>
-					</a>
-							<a href="#" target="_blank" class="site_name_link"><i>www.site.ru</i></a>
-							<div class="works_info">Информация о проекте 4 превью 2 строки....</div>
-				</div>
-				
-				
-				<div class="my_works">
-					<a href="#" target="_blank" class="work_image_link last">
-						<div class="my_works_addres last">
-							<img src="../img/picture_works/add_project.png" height="127" width="181" alt="add_work" class="picture_works_add">
-						</div>
-					</a>
-				
-					<a href="pages4.html"><div class="add_works">Добавить проект</div></a>
-				</div>
+		<section class="section_add_client clearfix">
+			<div class="wrapper_forms">
+			<div class="text_information_add_client">
+						У вас интересный проект? Напишите мне
+					</div>
+				<div class="main_form">
 					
+						<div class="add_oder clearfix">
+							<form action="cj27111992@gmail.com" class="oder_form" method="POST">
+							<label class="label_name">
+								<div class="your_name">Имя</div>
+								<input type="text" placeholder="Как к вам обращаться" name="name-friend" class="input_name">
+							</label>
+
+							<label class="label_email">
+								<div class="your_name">Email</div>
+								<input type="text" placeholder="Куда мне писать" name="email-friend" class="input_name">
+							</label>
+
+							<label class="label_massage">
+								<div class="your_textarea">Сообщение</div>
+								<textarea name="text_friend" id="textarea" cols="30" rows="10"  placeholder="Куда мне писать" class="textarea_style"></textarea>
+
+							</label>
+
+						<div class="clearfix">
+							<label class="label_massage">
+								<div class="your_chek">Введите код указанный на картинке</div>
+									<img src="../img/picture_works/chek.png" height="79" width="191" alt="chek" class="img_chek">
+									<input type="text" placeholder="Введите код" name="name-friend" class="input_chek">
+							</label>
+
+							<label class="label_massage">
+								
+									<input type="submit" value="Отправить" name="submit-friend" class="submit_go">
+									<input type="reset" value="Очистить" name="submit-friend" class="submit_clear">
+							</label>
+						</div>
+							</form>
+						</div>
 				</div>
 			</div>
 		</section>
@@ -177,7 +146,7 @@
 </div>
 
 <footer class="footer clearfix">
-	<a href="#"><div class="enter"></div></a>
+	<a href="pages4.html"><div class="enter"></div></a>
 	<div class="copyright">
 		© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его
 	</div>
