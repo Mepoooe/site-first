@@ -1,81 +1,62 @@
-.section_add_client{
-	min-height: 841px;
+.form_enter{
+	width:590px;
+	height:490px;
 	background-color: #eff3f7;
-	margin:40px auto;
+	margin: 280px 0 0 405px;
 }
-.wrapper_forms{
-	min-height: 100%;
-	overflow: hidden;
-	position: relative;
-}
-.main_form{
-	width:402px;
-	min-height:470px;
-	margin: 0px auto;
-}
-.text_information_add_client{
-	width:650px;
-	min-height:75px;
-	padding:45px 0 0px 57px;
-	font-size: 27px;
-	color:#fff;
+.header_enter{
+	width:455px;
+	height:70px;
 	background-color: #48cbe8;
+	position: relative;
+	font-size:40px;
+	color:#fff;
+	padding:20px 0 0 135px;
+	 letter-spacing: 1px;
 }
-.text_information_add_client:after{
+.header_enter:after{
 	content:"";
 	position:absolute;
-	top:120px;
+	top:90px;
 	left:0px;
-	width:650px;
-	height:20px;
+	width:590px;
+	height:15px;
 	background-color: #67dffa;
 }
 
-.your_name{
-	font-size: 19px;
-	color:#b9bec8;
-	margin:65px 0 0 0;
+.label_enter_name{
+	display: block;
+	margin:30px ;
+
 }
-.input_name{
-	width:180px;
-	height:37px;
+.your_enter_name{
+	font-size: 36px;
+	color:#959aa8;
+	text-align: center;
+
+}
+.input_enter_name{
+	width:405px;
+	height:58px;
+	margin: 14px 0 -17px 52px;
+	padding-left:18px;
 	border:1px solid #48cbe8;
 	border-radius: 5px;
-	padding-left:10px;
-	font-size: 13px;
-	margin-top:2px;
 }
 ::-webkit-input-placeholder{color:#48cbe8;}
 ::-moz-placeholder          {color:#48cbe8;}/* Firefox 19+ */
 :-moz-placeholder           {color:#48cbe8;}/* Firefox 18- */
 :-ms-input-placeholder      {color:#48cbe8;}
 
-.label_name{
-	float:left;
-	
-}
-.label_email{
-	float:left;
-	margin-left:17px;
-}
-
-.label_massage{
-	float:left;
-	margin-top: 2px;
-}
-.your_textarea{
-	font-size: 19px;
-	color:#b9bec8;
-	margin:15px 0 0 0;
-
-}
-.textarea_style{
-	width:390px;
-	height:170px;
+.enter_submit{
+	width:230px;
+	height:53px;
+	margin:21px 0 0 180px;
+	background-color: #48cbe8;
 	border:1px solid #48cbe8;
 	border-radius: 5px;
-	padding-left:10px;
-	padding-top: 10px;
-	font-size: 13px;
-	margin-top:2px;
+	font-size: 36px;
+	text-align: center;
+	color:#fff;
+	box-shadow: 0 2px 0px rgba(0,0,0,0.5);
 }

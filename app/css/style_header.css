@@ -3,6 +3,9 @@ body, html{
 	height:100%;
 	width:100%;
 }
+*{
+	font-family: firaSans;
+}
 .wrapper{
 	min-height: 100%;
 	overflow: hidden;
