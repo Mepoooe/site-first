@@ -33,7 +33,7 @@
 	border-radius: 5px 5px 0px 0px;
 }
 .links_menu.third{
-	border-radius: 5px 5px 0px 0px;
+	border-radius: 0px 0px 5px 5px;
 }
 
 .links_menu:hover{

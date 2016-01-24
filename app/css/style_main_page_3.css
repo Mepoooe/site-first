@@ -45,6 +45,7 @@
 	font-size: 13px;
 	margin-top:2px;
 }
+
 ::-webkit-input-placeholder{color:#48cbe8;}
 ::-moz-placeholder          {color:#48cbe8;}/* Firefox 19+ */
 :-moz-placeholder           {color:#48cbe8;}/* Firefox 18- */
