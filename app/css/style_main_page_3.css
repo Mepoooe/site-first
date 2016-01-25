@@ -38,6 +38,7 @@
 	color:#b9bec8;
 	margin:65px 0 0 0;
 }
+
 .input_name{
 	width:180px;
 	height:37px;
@@ -58,8 +59,8 @@
 	
 }
 .label_email{
-	float:left;
-	margin-left:15px;
+	float:right;
+	display: block;
 }
 
 .label_massage{
@@ -97,7 +98,8 @@
 	float:left;
 }
 .input_chek{
-	float:left;
+	float:right;
+	display: block;
 	width:180px;
 	height:29px;
 	border:1px solid #48cbe8;
