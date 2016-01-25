@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=1230">
+	<link rel="shortcut icon" href="../img/favicon.ico"
+	type="image/x-icon">
 	<link rel="stylesheet" href="../css/lib/normalize.css">
 	<link rel="stylesheet" href="../fonts/fira/fira.css">
 	<link rel="stylesheet" href="../css/style_header.css">
@@ -11,7 +13,7 @@
 	<link rel="stylesheet" href="../css/style_footer.css">
 	<link rel="stylesheet" href="../css/style_main_page_2.css">
 	<link rel="stylesheet" href="../css/style_main_page_3.css">
-	<script src="../bower_components/modernizr/modernizr.js"></script>
+	<script src="../../bower_components/modernizr/modernizr.js"></script>
 	<title>Сайт резюме</title>
 </head>
 <body>
@@ -36,22 +38,21 @@
 				<ul class="menu">
 						<li class="sidebar_li first navigator">
 							<a class="links_menu first border" href="../index.html">
-								<div class="border_bottom">Обо мне</div>
+								<div class="">Обо мне</div>
 							</a>
 						</li>
 			
 						<li class="sidebar_li second navigator">
 							<a class="links_menu second" href="pages2.html">
-								<div class="border-bottom">Мои работы</div>
+								<div class="">Мои работы</div>
 							</a>
 						</li>
 					
 						<li class="sidebar_li navigator">
 							<a class="links_menu third active" href="pages3.html">
-								<div class="border-bottom">Связаться со мной</div>
+								<div class="">Связаться со мной</div>
 							</a>
 						</li>
-					</a>
 				</ul>
 			</div>
 			
@@ -62,20 +63,20 @@
 					</li>
 					
 						<li class="navigator contacts1" >
-						<a class="links_contacts post" href="#">
+						<a class="links_contacts post" href="mailto:cj27111992@gmail.com">
 									cj27111992@gmail.com
 						</a>
 						</li>
 					
 						<li class="navigator contacts2">
-						<a class="links_contacts phone" href="#">
+						<a class="links_contacts phone" href="tel:+380668926***">
 							
 									+380668926482
 						</a>
 						</li>
 					
 					<li class="navigator contacts3">
-						<a class="links_contacts skype" href="#">
+						<a class="links_contacts skype" href="skype:misha16208?chat">
 							
 									misha162008
 								
@@ -95,42 +96,41 @@
 				<div class="main_form">
 					
 						<div class="add_oder clearfix">
-							<form action="cj27111992@gmail.com" class="oder_form" method="POST">
+							<form action="mailto:cj27111992@gmail.com" class="oder_form" method="POST">
 							<label class="label_name">
-								<div class="your_name">Имя</div>
+								<span class="your_name">Имя</span>
 								<input type="text" placeholder="Как к вам обращаться" name="name-friend" class="input_name">
 							</label>
 
 							<label class="label_email">
-								<div class="your_name">Email</div>
+								<span class="your_name">Email</span>
 								<input type="text" placeholder="Куда мне писать" name="email-friend" class="input_name">
 							</label>
 
 							<label class="label_massage">
-								<div class="your_textarea">Сообщение</div>
+								<span class="your_textarea">Сообщение</span>
 								<textarea name="text_friend" id="textarea" cols="30" rows="10"  placeholder="Куда мне писать" class="textarea_style"></textarea>
 
 							</label>
 
 						<div class="clearfix">
 							<label class="label_massage">
-								<div class="your_chek">Введите код указанный на картинке</div>
+								<span class="your_chek">Введите код указанный на картинке</span>
 									<img src="../img/picture_works/chek.png" height="79" width="191" alt="chek" class="img_chek">
 									<input type="text" placeholder="Введите код" name="name-friend" class="input_chek">
 							</label>
 
-							<label class="label_massage">
+					
 								
 									<input type="submit" value="Отправить" name="submit-friend" class="submit_go">
+							
 									<input type="reset" value="Очистить" name="submit-friend" class="submit_clear">
-							</label>
+							
 						</div>
 							</form>
 						</div>
 				</div>
 			</div>
-		</section>
-		
 		</section>
 	</section>
 </main>

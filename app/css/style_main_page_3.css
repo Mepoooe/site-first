@@ -32,6 +32,8 @@
 }
 
 .your_name{
+	display:block;
+	font-family: FiraSans light;
 	font-size: 19px;
 	color:#b9bec8;
 	margin:65px 0 0 0;
@@ -65,6 +67,7 @@
 	margin-top: 2px;
 }
 .your_textarea{
+	display:block;
 	font-size: 19px;
 	color:#b9bec8;
 	margin:15px 0 0 0;
@@ -85,6 +88,7 @@
 	margin-top: 0px;
 }
 .your_chek{
+	display: block;
 	font-size: 19px;
 	color:#b9bec8;
 	margin:6px 0 2px 0;

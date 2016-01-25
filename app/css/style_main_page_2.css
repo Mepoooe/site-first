@@ -39,6 +39,11 @@
 	background-color: rgba(59, 168, 192, 0.75);
 	visibility: hidden;
 }
+.work_site_address{
+	font-family: FiraSans LightItalic;
+	font-size: 13px;
+}
+
 
 .name_works{
 	position: absolute;

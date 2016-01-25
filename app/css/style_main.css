@@ -15,7 +15,7 @@
 	content:"";
 	display:table;
 }
-.clearfix{
+.clearfix:after{
 	clear:both;
 }
 
@@ -53,8 +53,13 @@
 
 .information_content{
 	width:380px;
-	height:200px;
+	min-height:200px;
 	float:right;
+}
+
+.name_info_fonts{
+	font-family: FiraSans medium;
+	font-size: 17px;
 }
 
 .info.first{
@@ -121,6 +126,11 @@ background-image: -webkit-linear-gradient( 90deg, rgb(46,140,162) 0%, rgb(46,140
 	width:36px;
 	height:35px;
 	background: url(../img/spritesheet.png) 99.3% 20% no-repeat;
+}
+
+.experience_data{
+	font-family: FiraSans light;
+	font-size: 15px;
 }
 
 .study{
