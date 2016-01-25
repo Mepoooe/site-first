@@ -1,0 +1,172 @@
+
+.vk{
+	background-image: url(../img/spritesheet.png) ;
+	width:53px;
+	height: 50px;
+	background-position: 85%;
+display:inline-block;
+}
+.vk:hover{
+	background-image: url(../img/spritesheet.png) ;
+	width:51px;
+	height: 50px;
+	background-position: 93%;
+}
+
+.fb{
+	margin-right: 20px;
+	background-image: url(../img/spritesheet.png) ;
+	width:50px;
+	height: 50px;
+	background-position: 10%;
+display:inline-block;
+}
+.fb:hover{
+	background-image: url(../img/spritesheet.png) ;
+	width:50px;
+	height: 50px;
+	background-position: 18.2%;
+}
+
+.tw{
+	margin-right: 18px;
+	background-image: url(../img/spritesheet.png) ;
+	width:50px;
+	height: 50px;
+	background-position: 68%;
+display:inline-block;
+}
+.tw:hover{
+	background-image: url(../img/spritesheet.png) ;
+	width:50px;
+	height: 50px;
+	background-position: 76.99%;
+}
+
+.github{
+	margin-right: 50px;
+	background-image: url(../img/spritesheet.png) ;
+	width:50px;
+	height: 50px;
+	margin-right:0;
+	background-position: 26%;
+}
+.github:hover{
+	background-image: url(../img/spritesheet.png) ;
+	width:50px;
+	height: 50px;
+	background-position: 35%;
+}
+
+ .header:after{
+	content:"";
+	position: absolute;
+	top:105px;
+ background: url(../img/line_for_ie8.png) no-repeat;
+
+  height: 3px;
+  
+}
+
+.no-cssgradients .header:after{
+		background: url(../img/line_for_ie8.png);
+		height:3px;
+		width:1800px;
+} 
+
+.post:before{
+	content: "";
+	position: absolute;
+	top:6px;
+	width: 22px;
+	height: 22px;
+	background-image: url(../img/spritesheet.png);
+	background-position: 50% 1%;
+}
+.phone:before{
+	content: "";
+	position: absolute;
+	left:32px;
+	top:4px;
+	width: 22px;
+	height: 24px;
+	background-image: url(../img/spritesheet.png);
+	background-position: 46% 4%;
+}
+
+.experience_part:before{
+	content:"";
+	position:absolute;
+	left:-70px;
+	top: 0px;
+	width:40px;
+	height:35px;
+	background: url(../img/spritesheet.png) 100% 20% no-repeat;
+}
+
+					/* page_2 */
+
+.div_name_works{
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height:100%;
+	background-color: black;
+	visibility: hidden;
+}
+
+.name_works{
+	position: absolute;
+	top:40%;
+	left:27%;
+	visibility: hidden;
+	border: 2px solid white;
+	border-radius: 5px;
+	padding:5px;
+}
+
+.my_works_addres:hover .div_name_works,
+.my_works_addres:hover .name_works{
+	visibility: visible;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+
+
+/* page_3 */
+
+.label_email{
+	float:left;
+	margin-left:13px;
+}
+
+.input_chek{
+	float:left;
+	width:180px;
+	height:29px;
+	border:1px solid #48cbe8;
+	margin:20px 0 0 15px;
+	padding-left:10px;
+	font-size: 13px;
+}
+
+/* footer */
+
+.enter{
+	float:left;
+	width:35px;
+	height:40px;
+	background: url(../img/spritesheet.png) 42% 0%;
+	margin:20px 0 0 240px;
+}
+.enter:hover{
+	background: url(../img/spritesheet.png) 5% 0%;
+}
+.no-cssgradients .footer:after{
+	content:"";
+	position:absolute;
+	top:0px;
+	background: url(../img/line_for_ie8.png);
+	height:3px;
+	width:1800px;
+} 
