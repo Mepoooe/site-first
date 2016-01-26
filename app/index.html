@@ -36,7 +36,6 @@
 
 <main class="main clearfix">
 	<nav class="nav">
-			<div class="sidebar">
 				<ul class="menu">
 						<li class="sidebar_li first navigator">
 							<a class="links_menu first active" href="index.html">
@@ -45,19 +44,18 @@
 						</li>
 			
 						<li class="sidebar_li second navigator">
-							<a class="links_menu second border" href="pages/pages2.html">
+							<a class="links_menu second border" href="pages2.html">
 								<div class="border-bottom">Мои работы</div>
 							</a>
 						</li>
 					
 						<li class="sidebar_li navigator">
-							<a class="links_menu third" href="pages/pages3.html">
+							<a class="links_menu third" href="pages3.html">
 								<div class="border-bottom">Связаться со мной</div>
 							</a>
 						</li>
 					
 				</ul>
-			</div>
 			
 			<aside class="aside">
 				<ul class="menu">
@@ -95,32 +93,33 @@
 			<div class="text_information">
 				Основная информация
 			</div>
-
+		<div class="information_content_inner">
 			<div class="circle">
 				<img src="img/my_photo.jpg" alt="I_am_Misha"  class="photo">
 			</div>
 			<div class="information_content">
-				<p class="info first"><b class="name_info_fonts">Меня зовут:</b> Никула Михаил Андреевич</p>
-				<p class="info">
-					<b class="name_info_fonts">Мне:</b> 23 года
-				</p>
-				<p class="info">
-					<b class="name_info_fonts">Мой город:</b> Краматорск, Украина
-				</p>
-				<p class="info">
-					<b class="name_info_fonts">Моя специализация:</b> Web-разработчик
-				</p>
-				<p class="info">
-					<b class="name_info_fonts">Ключевые навыки:</b>
-				<span class="skils">
-					<span class="web">html</span>
-					<span class="web">css</span>
-					<span class="web js">javascript</span>
-					<span class="web">gulp</span>
-					<span class="web">git</span>
-				</span>
-				</p>
-			</div>
+					<p class="info first"><span class="name_info_fonts">Меня зовут:</span> Никула Михаил Андреевич</p>
+					<p class="info">
+						<span class="name_info_fonts">Мне:</span> 23 года
+					</p>
+					<p class="info">
+						<span class="name_info_fonts">Мой город:</span> Краматорск, Украина
+					</p>
+					<p class="info">
+						<span class="name_info_fonts">Моя специализация:</span> Web-разработчик
+					</p>
+					<p class="info">
+						<span class="name_info_fonts">Ключевые навыки:</span>
+					<span class="skils">
+						<span class="web">html</span>
+						<span class="web">css</span>
+						<span class="web js">javascript</span>
+						<span class="web">gulp</span>
+						<span class="web">git</span>
+					</span>
+					</p>
+				</div>
+		</div>
 		</section>
 		<section class="experience">
 			<div class="text_information_experience">
@@ -129,16 +128,17 @@
 			<div class="experience_content">
 				<ul class="experience_content_block">
 					<li class="experience_part">
-					<b>"ИП Боровицкий" - Продавец дисков</b><br>
-					<span class="experience_data">Сентябрь 2005 - Август 2008</span>
+						<span class="experience_name">"ИП Боровицкий" - Продавец дисков</span>
+						<span class="experience_data">Сентябрь 2005 - Август 2008</span>
 					</li>
 					<li class="experience_part">
-						<b>"Philip Morris International" - Trainee in sales and distribution</b><br>
+						<span class="experience_name">"Philip Morris International" - Trainee in sales and distribution</span>
 						<span class="experience_data">Июль 2015 - Август 2015</span>
 					</li>
 				</ul>
 			</div>
 		</section>
+
 		<section class="study">
 			<div class="text_information_study">
 				Образование
@@ -146,12 +146,12 @@
 			<div class="experience_content">
 				<ul class="experience_content_block">
 					<li class="study_img first">
-					<b>Высшее. Донецкий национальный университет. Физико-технический факультет</b><br>
-					Сентябрь 2010 - Июль 2015
+					<span class="experience_name">Высшее. ДонНУ. Физико-технический факультет</span ><br>
+					<span class="data_stady">Сентябрь 2010 - Июль 2015</span>
 					</li>
 					<li class="study_img second">
-						<b>Курсы Loftschool.ru</b><br>
-						Январь 2016 - по настоящее время
+						<span class="experience_name">Курсы Loftschool.ru</span ><br>
+						<span class="data_stady">Январь 2016 - по настоящее время</span>
 					</li>
 				</ul>
 			</div>
@@ -163,9 +163,11 @@
 </div>
 
 <footer class="footer clearfix">
-	<a href="pages/pages4.html"><div class="enter"></div></a>
-	<div class="copyright">
-		© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его
+	<div class="footer_content">
+	<a href="pages4.html"><div class="enter"></div></a>
+	
+		<span class="copyright">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</span>
+	
 	</div>
 </footer>
 <script src="js/libs/jquery.js"></script>

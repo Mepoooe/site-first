@@ -3,15 +3,25 @@
 .section_my_works{
 	min-height: 841px;
 	background-color: #eff3f7;
-	margin:40px 0 0 0;
+	margin:0px 0 0 0;
+}
+
+.text_information_my_works{
+	display: inline-block;
+	border-bottom:2px solid #3ba8c0;
+	padding:10px 20px 10px 24px;
+	font-size: 27px;
+	color:#3ba8c0;
+	margin-bottom: 25px;
 }
 
 .my_works{
 	width:185px;
-	min-height:205px;
 	display: inline-block;
-	margin:28px 0px 0 22px;
+	margin:0px 0px 30px 22px;
 	position: relative;
+	overflow: hidden;
+	vertical-align: top;
 }
 
 .picture_works{
@@ -40,7 +50,7 @@
 	visibility: hidden;
 }
 .work_site_address{
-	font-family: FiraSans LightItalic;
+	font-family: 'fira_sanslight_italic';
 	font-size: 13px;
 }
 
@@ -76,8 +86,22 @@
 .work_image_link.last{
 	border:0px;
 }
+
+.work_image_link.last{
+		margin:0 0 80px 0;
+		
+} 
+
+/* .my_works_addres.last:after{
+	content: "";
+	margin-top: auto;
+	position: relative;
+	width:100%;
+	height: 100%;
+	margin: 5px 0 0 0;
+} */
 .add_works{
-	margin-top: 50px;
+	margin-top: 65px;
 	text-align: center;
 	font-size: 15px;
 }

@@ -1,7 +1,7 @@
 .section_add_client{
 	min-height: 841px;
 	background-color: #eff3f7;
-	margin:40px auto;
+	margin:0px auto;
 }
 .wrapper_forms{
 	min-height: 100%;
@@ -117,7 +117,7 @@
 	background-color: #48cbe8;
 	border:1px solid #48cbe8;
 	border-radius: 5px;
-	box-shadow: 0 2px 0px rgba(0,0,0,0.5);
+	padding: 0px;
 }
 .submit_clear{
 	width:124px;
@@ -128,6 +128,19 @@
 	background-color: #849db5;
 	border:1px solid #849db5;
 	border-radius: 5px;
-	box-shadow: 0 2px 0px rgba(0,0,0,0.5);
 }
 
+.submit_clear:hover{
+	background-color: #687b8f;
+	box-shadow: 0 2px 0px rgba(0,0,0,0.5);
+}
+.submit_go:hover{
+	background-color: #3ba8c0;
+	box-shadow: 0 2px 0px rgba(0,0,0,0.5);
+}
+.submit_clear:active{
+	padding: 2px;
+}
+.submit_go:active{
+	padding: 2px;
+}
