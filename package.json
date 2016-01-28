@@ -4,7 +4,8 @@
   "description": "INSTRUCTION\r 1.git clone https://github.com/misha162008/noooo- <br>\r 2.cd noooo- <br>\r 3.npm i <br>\r 4.bower i <br>",
   "main": "index.js",
   "dependencies": {
-    "gulp": "^3.9.0"
+    "gulp": "^3.9.0",
+    "gulp-modernizr": "0.0.0"
   },
   "devDependencies": {
     "browser-sync": "^2.11.1",

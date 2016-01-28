@@ -1,5 +1,27 @@
 var gulp = require("gulp"),
- browserSync = require('browser-sync');
+ browserSync = require('browser-sync'),
+ modernizr = require('gulp-modernizr');
+
+gulp.task('modernizr', function(){
+	gulp.src('app/js/*.js')
+		.pipe(modernizr(
+		  {
+		  	//подключаем необх опции
+		  	"options" : [
+		  		"setClasses",
+		  		"html5shiv"
+		  		],
+
+		  	//подключ необх набор тустов
+		  	"test" : ['placeholder', 'cssanimations'],
+
+		  	//собирать минифиц-ную вурсию
+		  	"uglify" : true,
+
+		  }
+		))
+	.pipe(gulp.dest("app/js/vendor"))
+});
 
 gulp.task('server', function(){
  browserSync({
@@ -18,4 +40,4 @@ gulp.task('watch', function(){
   ]).on('change', browserSync.reload);
 });
 
-gulp.task('default', ['server', 'watch']);
+gulp.task('default', ['modernizr', 'server', 'watch']);
