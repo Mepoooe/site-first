@@ -3,7 +3,6 @@
 }
 .menu{
 	width:250px;
-	margin-left:57px;
 	margin-bottom: 20px;
 }
 
@@ -67,12 +66,15 @@ ul{
 
 
 .links_contacts{
+	width:170px;
 	display: block;
 	text-decoration: none;
 	padding:8px 0 0 75px;
 	color:#fff;
 	position: relative;
 	font-size: 17px;
+	text-overflow:ellipsis;
+	overflow: hidden;
 }
 .post:before{
 	content: "";
