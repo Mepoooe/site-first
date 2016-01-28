@@ -4,6 +4,13 @@
 	margin-top: -77px;
 	position: relative;
 }
+
+.footer_content{
+	position: relative;
+	min-width:960px;
+	max-width: 1200px;
+}
+
 .footer:before{
 	content:"";
 	position: absolute;
@@ -13,12 +20,6 @@
   background-image: -ms-linear-gradient( 10deg, rgb(28,102,122) 0%, rgb(246,250,254) 0%, rgb(216,216,216) 0%, rgb(242,246,250) 0%, rgb(135,174,186) 28%, rgb(28,102,122) 48%, rgb(135,174,186) 71%, rgb(242,246,250) 100%);
   width: 100%;
   height: 3px;
-}
-
-.footer_content{
-	position: relative;
-	min-width:1200px;
-	max-width: 1800px;
 }
 
 .enter{
