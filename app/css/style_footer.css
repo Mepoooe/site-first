@@ -1,4 +1,5 @@
 .footer{
+	min-width:1060px;
 	background-color: #eff3f7;
 	height:77px;
 	margin-top: -77px;
@@ -7,7 +8,7 @@
 
 .footer_content{
 	position: relative;
-	min-width:960px;
+	min-width:1060px;
 	max-width: 1200px;
 }
 
@@ -39,7 +40,7 @@
 	position: absolute;
 	content: "";
 	top:30px;
-	right:450px;
+	right:350px;
 	font-size: 13px;
 	font-family: 'fira_sanslight';
 }
