@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="css/style_main.css">
 	<link rel="stylesheet" href="css/style_footer.css">
 	<link rel="stylesheet" href="css/style_main_page_2.css">
+	<link rel="stylesheet" href="css/add_project.css">
 	<!--[if IE 8]> <link href= "css/ie8.css" rel= "stylesheet" media= "all" /> <![endif]-->
 	<script src="js/vendor/modernizr.js"></script>
 	<title>Сайт резюме</title>
@@ -170,7 +171,7 @@
 				</div>
 
 				<div class="my_works">
-					<a href="#" target="_blank" class="work_image_link last">
+					<a href="#add_project_bPopup" class="work_image_link last add_popup" id="bPopup_run">
 						<div class="my_works_addres last">
 							<img src="../img/picture_works/add_project.png" height="127" width="181" alt="add_work" class="picture_works_add last">
 						</div>
@@ -192,8 +193,40 @@
 	
 	</div>
 </footer>
+
+<div class="add_pcroject" id="add_project_bPopup">
+	<div class="header_add_project">
+		Добавление проекта
+		<img src="img/close.png" height="25" width="25" alt="close" class="close_add_project b-modal __b-popup1__" >
+	</div>
+	<form action="#" method="POST">
+		<label for="name_add_project">
+			<span class="name_ name_add">Название проекта</span>
+			<input type="text" name="name_add" id="name_add_project" class="inputs_add_project" placeholder="Введите название">
+		</label>
+
+		<label class="picture_add_project_label">
+			<span class="picture_ name_add">Картинка проекта</span>
+			<div class="picture_add_project">
+				<input type="text" name="picture_add" id="picture_add_project_" class="text_add_project" placeholder="Введите название">
+				<input type="file" class="add_project_picture" value="" accept="image/jpeg,image/png,image/gif">
+			</div>
+		</label>
+
+		<label for="url_add_project">
+			<span class="url_ name_add">URL проекта</span>
+			<input type="text" name="url_add" id="url_add_project" class="inputs_add_project" placeholder="Введите название">
+		</label>
+		<label for="text_ add_project">
+			<span class="url_ name_add">Описание</span>
+			<textarea name="text_add" id="text_add_project" cols="100" rows="100" class="textarea_add_project" placeholder="Введите название"></textarea>
+		</label>
+		<button class="button_add_project">Добавить</button>
+	</form>
+</div>
 <script src="js/libs/jquery.js"></script>
 <script src="js/main.js"></script>
+<script src="js/libs/jquery.bpopup.min.js"></script>
 </body>
 </html>
 
