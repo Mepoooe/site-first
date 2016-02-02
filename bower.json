@@ -4,7 +4,8 @@
     "jquery": "1.11.1",
     "normalize-css": "normalize.css#~3.0.3",
     "modernizr": "2.8.3",
-    "bPopup": "bpopup#~0.11.0"
+    "bPopup": "bpopup#~0.11.0",
+    "qtip2": "~2.2.1"
   },
   "devDependencies": {
     "bPopup": "bpopup#~0.11.0"

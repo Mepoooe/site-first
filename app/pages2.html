@@ -16,6 +16,7 @@
 	<link rel="stylesheet" href="css/style_footer.css">
 	<link rel="stylesheet" href="css/style_main_page_2.css">
 	<link rel="stylesheet" href="css/add_project.css">
+	<link rel="stylesheet" href="css/lib/jquery.qtip.css">
 	<!--[if IE 8]> <link href= "css/ie8.css" rel= "stylesheet" media= "all" /> <![endif]-->
 	<script src="js/vendor/modernizr.js"></script>
 	<title>Сайт резюме</title>
@@ -171,7 +172,7 @@
 				</div>
 
 				<div class="my_works">
-					<a href="#add_project_bPopup" class="work_image_link last add_popup" id="bPopup_run">
+					<a href="#" class="work_image_link last add_popup" id="bPopup_run">
 						<div class="my_works_addres last">
 							<img src="../img/picture_works/add_project.png" height="127" width="181" alt="add_work" class="picture_works_add last">
 						</div>
@@ -197,9 +198,12 @@
 <div class="add_pcroject" id="add_project_bPopup">
 	<div class="header_add_project">
 		Добавление проекта
-		<img src="img/close.png" height="25" width="25" alt="close" class="close_add_project b-modal __b-popup1__" >
+		<img src="img/close.png" height="25" width="25" alt="close" class="close_add_project b-close" >
 	</div>
-	<form action="#" method="POST">
+	<form  method="POST" id="form_add_project">
+		<div class="success success-mes"></div>
+		<div class="error error-mes"></div>
+
 		<label for="name_add_project">
 			<span class="name_ name_add">Название проекта</span>
 			<input type="text" name="name_add" id="name_add_project" class="inputs_add_project" placeholder="Введите название">
@@ -221,12 +225,13 @@
 			<span class="url_ name_add">Описание</span>
 			<textarea name="text_add" id="text_add_project" cols="100" rows="100" class="textarea_add_project" placeholder="Введите название"></textarea>
 		</label>
-		<button class="button_add_project">Добавить</button>
+		<button type="submit" class="button_add_project" id="button_add_project">Добавить</button>
 	</form>
 </div>
 <script src="js/libs/jquery.js"></script>
 <script src="js/main.js"></script>
 <script src="js/libs/jquery.bpopup.min.js"></script>
+<script src="js/libs/jquery.qtip.min.js"></script>
 </body>
 </html>
 
