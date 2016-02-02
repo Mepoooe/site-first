@@ -1,0 +1,125 @@
+
+.add_pcroject{
+	width:360px;
+	z-index: 999;
+	background-color: #eff3f7;
+	display: none;
+}
+.header_add_project{
+	display: block;
+	font-size: 25px;
+	font-family: 'fira_sansregular';
+	background-color: #48cbe8;
+	padding:5px 10px 10px 13px;
+	color:#fff;
+	position: relative;
+}
+.close_add_project{
+	float:right;
+	padding: 0px;
+	margin: 0px;
+	padding:5px 0 0 0 ;
+	cursor: pointer;
+
+}
+.header_add_project:after{
+	content:"";
+	position: absolute;
+	bottom:0;
+	right:0;
+	height:10px;
+	width:360px;
+	background-color: #67dffa;
+}
+.name_add{
+	display: block;
+	color:#a7acb8;
+	font-size: 17px;
+	padding:5px 0px 0 20px;
+}
+.inputs_add_project{
+	width:313px;
+	height:40px;
+	margin: 0 0 0 20px;
+	padding:0px 0 0 5px;
+	font-size: 13px;
+	border:1px solid #48cbe8;
+	border-radius: 5px;
+}
+.textarea_add_project{
+	width:313px;
+	height:95px;
+	margin: 0 0 0 20px;
+	padding:15px 0 0 5px;
+	font-size: 13px;
+	border:1px solid #48cbe8;
+	border-radius: 5px;
+}
+::-webkit-input-placeholder{color:#48cbe8;}
+::-moz-placeholder          {color:#48cbe8;}/* Firefox 19+ */
+:-moz-placeholder           {color:#48cbe8;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#48cbe8;}
+
+.picture_add_project{
+	position: relative;
+	width:313px;
+	margin: 0 0 0 20px;
+	padding:0px 0 0 0px;
+	font-size: 13px;
+	
+	border-radius: 5px;
+	background-color: #fff;
+	background-image: url(../img/7.png);
+	background-position: 82%;
+}
+
+.text_add_project{
+	border:1px solid #48cbe8;
+	border-radius: 5px 0 0 5px;
+	width:265px;
+	outline:none;
+	padding-left: 5px;
+	-webkit-appearance: none; /* Убираем рамку в Chrome и Safari */
+	min-height:40px;
+}
+.add_project_picture{
+	position: absolute;
+    top: 10px;
+    right: 0;
+    width:45px;
+    line-height: 80px;
+    opacity: 0;
+    cursor: pointer;
+	}
+
+.button_add_project{
+	width:138px;
+	height:35px;
+	margin:10px 0 20px 110px;
+	font-size: 19px;
+	color:#fff;
+	background-color: #48cbe8;
+	border:1px solid #48cbe8;
+	border-radius: 5px;
+	padding: 0px;
+}
+.button_add_project:hover{
+	background-color: #3ba8c0;
+	box-shadow: 0 2px 0px rgba(0,0,0,0.5);
+}
+.button_add_project:active{
+	padding: 2px;
+}
+
+.success{
+	width:100px;
+	height:50px;
+	background-color: green;
+	display: none;
+}
+.error{
+	width:100px;
+	height:50px;
+	background-color: red;
+	display: none;
+}
