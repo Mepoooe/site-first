@@ -134,3 +134,15 @@
 	background-color: red;
 	display: none;
 }
+
+.has-error{
+	background-color: #fad2d1;
+	border-color:#f97e76;
+}
+
+.qtip-mystyle{
+	background-color: #f97e76;
+	border-color: :#f97e76;
+	color: #ffffff;
+	font-size: 13px;
+}

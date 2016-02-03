@@ -62,13 +62,6 @@ var myModule = (function(){
 		//@form - форма
 		//@url - адресс php файла
 	var _ajaxForm = function(form, url){
-		//1. проверить форму 
-		//2. собрать данные формы
-		//3. вернуть ответ сервера
-
-		/*if(!valid){
-			return false;
-		}*/
 		data = form.serialize();
 
 		var result = $.ajax({
@@ -93,7 +86,7 @@ var myModule = (function(){
 
 myModule.init();
 
-//40 минута
+
 
 
 
