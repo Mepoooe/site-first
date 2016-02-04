@@ -1,4 +1,4 @@
-var validaton = (function(){
+var validation = (function(){
 
 	var init = function(){
 		console.log('инициализация модуля validation');
@@ -7,11 +7,11 @@ var validaton = (function(){
 
 	_imgPattern = /\.(jpeg|jpg|png|gif)$/i,
 	//Проверяет что бы все поля формы были не пустыми. Если пустые вызывает тултипы
-	validateForm = function(){
+	validateForm = function(form){
 		console.log("Проверяем форму");
 
 		var self = this, //что это такое? я про весь блок
-			elements = form.find('input, textarea').not('input[type="hidden"], input[name="filename"]'),
+			elements = form.find('input, textarea').not('input[type="hidden"], input[name="filename"], input[name="add_project_picture"]'),
 			valid = true;
 
 		$.each(elements, function(index, element){
@@ -26,7 +26,6 @@ var validaton = (function(){
 		});
 
 		return valid;
-
 	},
 
 	_addError = function(element){
@@ -35,7 +34,7 @@ var validaton = (function(){
 		_createQtip(element, element.attr('qtip-position'));
 	},
 
-	_createQtip = function(){
+	_createQtip = function(element, position){
 		console.log('Создаем тултип');
 
 		//позиционируе 
@@ -69,7 +68,7 @@ var validaton = (function(){
 			},
 			position: position,
 			style:{
-				classes: 'qtip-mystyle qtip-rounded',
+				classes: 'qtip-mystyle qtip-rounded qtip-red',
 				tip: {
 					height: 10,
 					width: 10
@@ -78,11 +77,26 @@ var validaton = (function(){
 		}).trigger('show');
 
 	},
+  //очищает форму
+  _clearForm = function(e){
+    console.log('очищает форму');
+
+    var form = $(this);
+    form.find('.inputs_add_project, .input_name, .textarea_style, .input_chek').trigger('hideTooltip');
+    form.find('.has-error').removeClass('has-error');
+  },
 
 	//прослушивает все события!
 	_setUpListners = function(){
+    $('form').on('keyDown', ".has-error", _removeError);//Убирает красную обводку у эл-та
+    $('form').on('click', ".has-error", _removeError);//Убирает красную обводку у эл-та при клике
+    $('form').on('reset', _clearForm);///Убирает красную обводку и тултипы у эл-тов при сбросе
+	},
 
-	}
+  //Убирает красную обводку у элементов форм
+  _removeError = function(e){
+    $(this).removeClass('has-error');
+  };
 
 
 	return {
@@ -91,44 +105,4 @@ var validaton = (function(){
 	};
 })();
 
-validaton.init();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*$(document).ready(function(){
-		
-		bPopup_run.onclick = function(){
-		$("#add_project_bPopup").bPopup();
-	};
-
-	$('#name_add_project').qtip({
-		 content:  {... },
-		position:{
-			my: 'center right',
-			at: 'center left'
-		}
-
-	});
-});
-*/
+validation.init();

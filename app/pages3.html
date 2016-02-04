@@ -16,6 +16,8 @@
 	<link rel="stylesheet" href="css/style_footer.css">
 	<link rel="stylesheet" href="css/style_main_page_2.css">
 	<link rel="stylesheet" href="css/style_main_page_3.css">
+	<link rel="stylesheet" href="css/add_project.css">
+	<link rel="stylesheet" href="css/lib/jquery.qtip.css">
 	<!--[if IE 8]> <link href= "css/ie8.css" rel= "stylesheet" media= "all" /> <![endif]-->
 	<script src="js/vendor/modernizr.js"></script>
 	<title>Сайт резюме</title>
@@ -117,20 +119,20 @@
 				<div class="main_form">
 					
 						<div class="add_oder clearfix">
-							<form action="#" class="oder_form" method="POST">
+							<form action="#" class="oder_form" method="POST" id="form_add_oder">
 							<label class="label_name">
 								<span class="your_name">Имя</span>
-								<input type="text" placeholder="Как к вам обращаться" name="name-friend" class="input_name">
+								<input type="text" placeholder="Как к вам обращаться" name="name-friend" class="input_name" qtip-content="Вы не ввели имя">
 							</label>
 
 							<label class="label_email">
 								<span class="your_name">Email</span>
-								<input type="text" placeholder="Куда мне писать" name="email-friend" class="input_name">
+								<input type="text" placeholder="Куда мне писать" name="email-friend" class="input_name" qtip-content="Вы не ввели Email" qtip-position="right">
 							</label>
 
 							<label class="label_massage">
 								<span class="your_textarea">Сообщение</span>
-								<textarea name="text_friend" id="textarea" cols="30" rows="10"  placeholder="Куда мне писать" class="textarea_style"></textarea>
+								<textarea name="text_friend" id="textarea" cols="30" rows="10"  placeholder="Кратко в чем суть" class="textarea_style" qtip-content="Опишите кратко суть проекта"></textarea>
 
 							</label>
 
@@ -138,7 +140,7 @@
 							<label class="label_massage">
 								<span class="your_chek">Введите код указанный на картинке</span>
 									<img src="../img/picture_works/chek.png" height="79" width="191" alt="chek" class="img_chek">
-									<input type="text" placeholder="Введите код" name="name-friend" class="input_chek">
+									<input type="text" placeholder="Введите код" name="name-friend" class="input_chek" qtip-content="Введите код" qtip-position="right">
 							</label>
 
 					<label class="label_massage">
@@ -169,6 +171,8 @@
 	</div>
 </footer>
 <script src="js/libs/jquery.js"></script>
+<script src="js/libs/jquery.qtip.min.js"></script>
+<script src="js/validation.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

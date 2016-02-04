@@ -206,33 +206,33 @@
 
 		<label for="name_add_project">
 			<span class="name_ name_add">Название проекта</span>
-			<input type="text" name="name_add" id="name_add_project" class="inputs_add_project" placeholder="Введите название">
+			<input type="text" name="name_add" id="name_add_project" class="inputs_add_project" placeholder="Введите название" qtip-content="Вы не ввели имя">
 		</label>
 
 		<label class="picture_add_project_label">
 			<span class="picture_ name_add">Картинка проекта</span>
 			<div class="picture_add_project">
-				<input type="text" name="picture_add" id="picture_add_project_" class="text_add_project" placeholder="Введите название">
-				<input type="file" class="add_project_picture" value="" accept="image/jpeg,image/png,image/gif">
+				<input type="text" name="picture_add" id="picture_add_project_" class="text_add_project" placeholder="Введите название" qtip-content="Вы не добавили картинку">
+				<input type="file" name="add_project_picture" class="add_project_picture" value="" accept="image/jpeg,image/png,image/gif">
 			</div>
 		</label>
 
 		<label for="url_add_project">
 			<span class="url_ name_add">URL проекта</span>
-			<input type="text" name="url_add" id="url_add_project" class="inputs_add_project" placeholder="Введите название">
+			<input type="text" name="url_add" id="url_add_project" class="inputs_add_project" placeholder="Введите название" qtip-content="Вы не внесли URL">
 		</label>
 		<label for="text_ add_project">
 			<span class="url_ name_add">Описание</span>
-			<textarea name="text_add" id="text_add_project" cols="100" rows="100" class="textarea_add_project" placeholder="Введите название"></textarea>
+			<textarea name="text_add" id="text_add_project" cols="100" rows="100" class="textarea_add_project" placeholder="Введите название" qtip-content="Опишите ваш проект"></textarea>
 		</label>
 		<button type="submit" class="button_add_project" id="button_add_project">Добавить</button>
 	</form>
 </div>
 <script src="js/libs/jquery.js"></script>
-<script src="js/main.js"></script>
 <script src="js/libs/jquery.bpopup.min.js"></script>
 <script src="js/libs/jquery.qtip.min.js"></script>
 <script src="js/validation.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
 

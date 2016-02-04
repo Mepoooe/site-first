@@ -144,5 +144,14 @@
 	background-color: #f97e76;
 	border-color: :#f97e76;
 	color: #ffffff;
-	font-size: 13px;
+	font-size: 23px;
+}
+.qtip-red{
+	background-color: #f97e76;
+	border-color: :#f97e76;
+	color: #ffffff;
+	font-size: 23px;
+}
+.qtip-content{
+    font-size: 16px;
 }
