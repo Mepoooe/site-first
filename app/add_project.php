@@ -7,7 +7,7 @@
 
 	if ($name === '') {
 		$data['status'] = 'error';
-		$data['text'] = "<h1>Заполните имя</h1>";
+		$data['text'] = 'Заполните имя';
 	}else{
 		$data['status'] = 'Ok';
 		$data['text'] = 'Да вы молодец';

@@ -70,6 +70,7 @@
 .my_works_addres:hover .div_name_works,
 .my_works_addres:hover .name_works{
 	visibility: visible;
+	-webkit-transform: scale(0);
 }
 
 .site_name_link{

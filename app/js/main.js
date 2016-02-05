@@ -43,7 +43,7 @@ var myModule = (function(){
 			myServerGiveMeAnAnswer = _ajaxForm(form, url);
 
 
-		myServerGiveMeAnAnswer.done = (function(ans) {
+		myServerGiveMeAnAnswer.done(function(ans) {
 
 			var successBox = form.find('.success-mes'),
 				errorBox = form.find('.error-mes');
@@ -96,41 +96,3 @@ myModule.init();
 
 window.qtp = myModule;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*$(document).ready(function(){
-		
-		bPopup_run.onclick = function(){
-		$("#add_project_bPopup").bPopup();
-	};
-
-	$('#name_add_project').qtip({
-		 content:  {... },
-		position:{
-			my: 'center right',
-			at: 'center left'
-		}
-
-	});
-});
-*/
