@@ -144,6 +144,39 @@ display:inline-block;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
 }
 
+.add_project_picture_label{
+display: block;
+width: 52px;
+height: 43px;
+position: absolute;
+right: 0;
+top:0;
+background-image: url(../img/7.png);
+background-color: #48cbe8;
+border-radius: 0 4px 4px 0;
+cursor: pointer;
+}
+
+.add_project_picture{
+border: 0;
+clip: rect(0 0 0 0);
+height: 1px;
+margin: -1px;
+overflow: hidden;
+padding: 0;
+position: absolute;
+width: 1px;
+}
+.picture_add_project{
+position: relative;
+width:313px;
+margin: 0 0 0 20px;
+padding:0px 0 0 0px;
+font-size: 13px;
+
+border-radius: 5px;
+background-color: #fff;
+}
 
 /* page_3 */
 

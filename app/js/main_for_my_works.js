@@ -33,7 +33,7 @@ var myModule = (function(){
 			form = divPopup.find('.form_add_project');
 		divPopup.bPopup({
 			speed:550,
-		/*	position: 'fixed',*/  /// посмотреть на сайте
+			 positionStyle: 'fixed', 
 			onClose: function(){
 				form.find('.server-mes').text('').hide();
 				form.find('.inputs_add_project, .text_add_project, .textarea_add_project, .input_name, .textarea_style, .input_chek').trigger('hideTooltip');

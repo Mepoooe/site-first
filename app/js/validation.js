@@ -19,7 +19,7 @@ var validation = (function(){
 		console.log("Проверяем форму");
 
 		var self = this, //что это такое? я про весь блок
-			elements = form.find('input, textarea').not('input[type="hidden"], input[name="filename"], input[name="add_project_picture"]'),
+			elements = form.find('input, textarea').not('input[type="hidden"], input[name="filename"], input[name="add_project_picture_name"]'),
 			valid = true;
 
 		$.each(elements, function(index, element){
@@ -49,7 +49,7 @@ var validation = (function(){
 		if(position === 'right'){
 			position = {
 				my: 'left center',
-				at: 'right center'
+				at: 'right center',
 				};
 			} else{
 				position = {
@@ -72,7 +72,7 @@ var validation = (function(){
 				event: 'show'
 			},
 			hide: {
-				event: 'keydown click hideTooltip'
+					event: 'keydown click hideTooltip'
 			},
 			position: position,
 			style:{
