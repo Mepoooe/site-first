@@ -8,10 +8,14 @@ var myModule = (function(){
 	//прослушивает события
 	var _setUpListners = function(){
 		//прослушка событий
+
 		$('#bPopup_run').on('click', _showModale); // открыть модальное окно
 		$('#form_add_project').on('submit', _addProject);//добавление проекта
+
+		/*
 		$('#form_add_oder').on('submit', _addProject);//добавление заказчика
 		$('#form_for_enter').on('submit', _addProject);//форма входа
+		*/
 	};
 
 
@@ -19,16 +23,23 @@ var myModule = (function(){
 	var _showModale = function(e){
 		console.log("Привет ");
 
-		e.preventDefault();
+		if (e.preventDefault) { // если метод существует
+		    e.preventDefault(); // то вызвать его
+		} else { // иначе вариант IE8-:
+		    e.returnValue = false;
+		}
 
 		var divPopup = $('#add_project_bPopup'),
 			form = divPopup.find('.form_add_project');
 		divPopup.bPopup({
 			speed:550,
+		/*	position: 'fixed',*/  /// посмотреть на сайте
 			onClose: function(){
 				form.find('.server-mes').text('').hide();
 				form.find('.inputs_add_project, .text_add_project, .textarea_add_project, .input_name, .textarea_style, .input_chek').trigger('hideTooltip');
 				form.find('.has-error').removeClass('has-error');
+				form.trigger('reset');
+				console.log('reset');
 			}
 		});
 	};
@@ -36,12 +47,17 @@ var myModule = (function(){
 	//добавляет проект
 	var _addProject = function(e){
 		console.log("привет от формы");
-		e.preventDefault();
+		if (e.preventDefault) { // если метод существует
+		    e.preventDefault(); // то вызвать его
+		} else { // иначе вариант IE8-:
+		    e.returnValue = false;
+		}
 
 		var form = $(this),
 			url = "add_project.php",
 			myServerGiveMeAnAnswer = _ajaxForm(form, url);
 
+			console.dir(form);
 
 		myServerGiveMeAnAnswer.done(function(ans) {
 
@@ -68,7 +84,7 @@ var myModule = (function(){
 		//@url - адресс php файла
 	var _ajaxForm = function(form, url){
 		if (!validation.validateForm(form)) return false;// Возвращает false, если не проходит валидацию
-		data = form.serialize();
+		data = form.serialize();  // что бы сервер понял строку
 
 	console.log(data);
 
@@ -76,7 +92,7 @@ var myModule = (function(){
 			url: url,
 			type: 'POST',
 			dataType: 'json',
-			data: data,
+			data: data,  // дата что отправляем на сервер, ans то что вернеся
 		}).fail(function(ans) {
 			console.log("error");
 			form.find('.error-mes').text("ошибка сервера").show();
@@ -86,13 +102,15 @@ var myModule = (function(){
 	};
 
 	//Возвращаем объект (публичные методы)
-	return{
+	return {
 		init: init
 	};
 
 })();
 
-myModule.init();
+if ($('#bPopup_run').length > 0) {
+	myModule.init();
+	console.log('my Module');
+}
 
-window.qtp = myModule;
 

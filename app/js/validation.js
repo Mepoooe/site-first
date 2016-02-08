@@ -105,4 +105,7 @@ var validation = (function(){
 	};
 })();
 
-validation.init();
+if ($('form').length > 0) {
+	validation.init();
+};
+
