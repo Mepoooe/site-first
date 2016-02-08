@@ -5,6 +5,14 @@ var validation = (function(){
 		_setUpListners();
 	},
 
+	placeholder = function(){
+		console.log('Placeholder for IE8');
+
+		$('input, textarea').placeholder();
+
+
+	},
+
 	_imgPattern = /\.(jpeg|jpg|png|gif)$/i,
 	//Проверяет что бы все поля формы были не пустыми. Если пустые вызывает тултипы
 	validateForm = function(form){
@@ -101,11 +109,13 @@ var validation = (function(){
 
 	return {
 		init: init,
-		validateForm: validateForm
+		placeholder: placeholder,
+		validateForm: validateForm,
 	};
 })();
 
 if ($('form').length > 0) {
 	validation.init();
+	validation.placeholder();
 };
 
