@@ -23,21 +23,6 @@ var myModule = (function(){
 		var form = $(this),
 			url = "../add_enter.php",
 			myServerGiveMeAnAnswer = _ajaxForm(form, url);
-
-		myServerGiveMeAnAnswer.done(function(ans) {
-
-			var successBox = form.find('.success-mes'),
-				errorBox = form.find('.error-mes');
-
-			console.log(ans);
-			if(ans.status === 'Ok'){
-				errorBox.hide();
-				successBox.text(ans.text).show();
-			}else{
-				successBox.hide();
-				errorBox.text(ans.text).show();
-			}
-		});
 	};
 
 	//универсальная функция которая может
@@ -58,6 +43,19 @@ var myModule = (function(){
 			type: 'POST',
 			dataType: 'json',
 			data: data,  // дата что отправляем на сервер, ans то что вернеся
+		}).done(function(ans) {
+
+			var successBox = form.find('.success-mes'),
+				errorBox = form.find('.error-mes');
+
+			console.log(ans);
+			if(ans.status === 'Ok'){
+				errorBox.hide();
+				successBox.text(ans.text).show();
+			}else{
+				successBox.hide();
+				errorBox.text(ans.text).show();
+			}
 		}).fail(function(ans) {
 			console.log("error");
 			form.find('.error-mes').text("ошибка сервера").show();
