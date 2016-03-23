@@ -41,3 +41,18 @@ gulp.task('watch', function(){
 });
 
 gulp.task('default', ['modernizr', 'server', 'watch']);
+
+
+/*
+[18:24:06] Юрий Кучма: spritesmith = require('gulp.C'),
+[18:24:20] Юрий Кучма: / -------- auto sprites  -------- /
+gulp.task('sprite', function() {
+    var spriteData = gulp.src(paths.dev + '/img/icons/*.png')
+        .pipe(spritesmith({
+            imgName: 'sprite.png',
+            imgPath: '../img/sprite.png',
+            cssName: 'sprite.scss'
+        }));
+    spriteData.img.pipe(gulp.dest(paths.dev + '/img/'));
+    spriteData.css.pipe(gulp.dest(paths.dev + '/scss/'));
+});*/

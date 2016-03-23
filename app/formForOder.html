@@ -20,6 +20,7 @@
 	<link rel="stylesheet" href="css/lib/jquery.qtip.css">
 	<!--[if IE 8]> <link href= "css/ie8.css" rel= "stylesheet" media= "all" /> <![endif]-->
 	<script src="js/vendor/modernizr.js"></script>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 	<title>Сайт резюме</title>
 </head>
 <body>
@@ -122,12 +123,12 @@
 							<form action="" class="oder_form" method="POST" id="form_add_oder">
 							<label class="label_name">
 								<span class="your_name">Имя</span>
-								<input type="text" placeholder="Как к вам обращаться" name="name-friend" class="input_name" qtip-content="Вы не ввели имя">
+								<input type="text" placeholder="Как к вам обращаться" name="name_friend" class="input_name" qtip-content="Вы не ввели имя">
 							</label>
 
 							<label class="label_email">
 								<span class="your_name">Email</span>
-								<input type="text" placeholder="Куда мне писать" name="email-friend" class="input_name" qtip-content="Вы не ввели Email" qtip-position="right">
+								<input type="text" placeholder="Куда мне писать" name="email_friend" class="input_name" qtip-content="Вы не ввели Email" qtip-position="right">
 							</label>
 
 							<label class="label_massage">
@@ -138,9 +139,7 @@
 
 						<div class="clearfix">
 							<label class="label_massage">
-								<span class="your_chek">Введите код указанный на картинке</span>
-									<img src="../img/picture_works/chek.png" height="79" width="191" alt="chek" class="img_chek">
-									<input type="text" placeholder="Введите код" name="name-friend" class="input_chek" qtip-content="Введите код" qtip-position="right">
+								<div class="g-recaptcha" data-sitekey="6LejABgTAAAAAKj_HiKJUf8lO8g_2Exs6Yh6jk_E"></div>
 							</label>
 
 					<label class="label_massage">

@@ -21,7 +21,7 @@ var myModule = (function(){
 		}
 
 		var form = $(this),
-			url = "../add_enter.php",
+			url = "add_enter.php",
 			myServerGiveMeAnAnswer = _ajaxForm(form, url);
 	};
 

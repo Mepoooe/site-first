@@ -24,7 +24,7 @@ var myModule = (function(){
 		}
 
 		var form = $(this),
-			url = "../add_oder.php",
+			url = "add_oder.php",
 			myServerGiveMeAnAnswer = _ajaxForm(form, url);
 
 	};
@@ -46,7 +46,9 @@ var myModule = (function(){
 			url: url,
 			type: 'POST',
 			dataType: 'json',
-			data: data,  // дата что отправляем на сервер, ans то что вернеся
+			data : {
+						data : data
+						}, // дата что отправляем на сервер, ans то что вернеся
 		}).done(function(ans) {
 
 			var successBox = form.find('.success-mes'),
@@ -61,7 +63,7 @@ var myModule = (function(){
 				errorBox.text(ans.text).show();
 			}
 		}).fail(function(ans) {
-			console.log("error");
+			console.log("Это fail");
 			form.find('.error-mes').text("ошибка сервера").show();
 		});
 

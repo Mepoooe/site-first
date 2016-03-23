@@ -8,7 +8,7 @@ var validation = (function(){
 	placeholder = function(){
 		console.log('Placeholder for IE8');
 
-		$('input, textarea').placeholder();
+		$('input, textarea').placeholder(); 
 
 
 	},
