@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "mine",
   "version": "1.0.0",
   "description": "INSTRUCTION\r 1.git clone https://github.com/misha162008/noooo- <br>\r 2.cd noooo- <br>\r 3.npm i <br>\r 4.bower i <br>",
@@ -25,4 +26,15 @@
     "url": "https://github.com/misha162008/noooo-/issues"
   },
   "homepage": "https://github.com/misha162008/noooo-#readme"
+=======
+  "name": "gulp-project",
+  "version": "0.1.0",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat-css": "^2.2.0",
+    "gulp-minify-css": "^1.2.3",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2"
+  }
+>>>>>>> 0393b44a0f235e9b42700d0efcef48338e004483
 }
