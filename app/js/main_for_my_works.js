@@ -1,6 +1,6 @@
 var myModule = (function(){
 	//Инициализация модуля
-	var init = function(){
+	var init = function(){ 
 		_setUpListners();
 		//то что должно произойти сразу
 	};
