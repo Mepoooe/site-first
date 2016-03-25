@@ -1,5 +1,4 @@
 .section_add_client{
-	min-height: 841px;
 	background-color: #eff3f7;
 	margin:0px auto;
 }
@@ -11,7 +10,7 @@
 .main_form{
 	width:402px;
 	min-height:470px;
-	margin: 0px auto;
+	margin: 0px auto 25px;
 }
 .text_information_add_client{
 	width:650px;
