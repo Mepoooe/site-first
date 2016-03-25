@@ -29,8 +29,10 @@ body, html{
 
 .header_content .img_logo{
 	position: absolute;
-	top:30px;
-	left:30px;
+	top: 0;
+    left: 130px;
+    width: 160px;
+    height: 100px;
 }
 
 .header_content .logo_text{
